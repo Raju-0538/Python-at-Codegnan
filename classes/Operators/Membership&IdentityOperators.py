@@ -1,0 +1,22 @@
+print("Membership Operators : ")
+print("Operator in : ")
+print("5 in [1,2,3,4] is",5 in [1,2,3,4])
+print("5 in [1,2,3,4,5] is",5 in [1,2,3,4,5])
+print("C in Codegnan is ",str('C' in 'Codegnan'))
+print("Operator not in : ")
+print("5 not in [1,2,3,4] is",5 not in [1,2,3,4])
+print("5 not in [1,2,3,4,5] is",5 not in [1,2,3,4,5])
+print("C not in Codegnan is ",str('C' not in 'Codegnan'))
+print("M not in Codegnan is ",str('M' not in 'Codegnan'))
+print("##########")
+print("Identity Operators : ")
+print("Operators is and not is : ")
+a,b = 10,20
+print("a,b is",a,b)
+print("a is b is",a is b)
+print("a is not b is ",a is not b)
+a=b=20
+print("a,b is",a,b)
+print("a is b is",a is b)
+print("a is not b is ",a is not b)
+
