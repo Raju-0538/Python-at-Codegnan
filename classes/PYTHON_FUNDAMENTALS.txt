@@ -1,0 +1,185 @@
+Today's topics:
+1. Program and first program
+2. Datatypes and Variables
+3. Control Flow Statements
+problem: capitalize the title.
+
+1. Program is a set of instructions to the computer. It is same like calculator, in calculator we give instructions using number, in computer we give instructions using program
+
+
+2. There are no values and datatypes in python. Everything is object and classes.
+e.g. 
+a = 120
+print(type(a))  #'<class int>'
+
+Type of classes:
+1. Non Iterable (Non-sequences)
+2. Iterables (Seqences) 
+3. Iterators
+4. User Defined objects
+
+NOTE: Non Sequences and Sequences together called as datatypes in some references.
+
+Non Iterables:
+Objects that can hold single element
+1. int      : a number without a decimal point
+e.g. a = 10
+Type of integers:
+binary integer: a = 0b0101  (0's and 1's only)
+octal integer : a = 0o7654  (0 to 7)
+hexa-decimal integer : a = 0xF9A ( 0 to 9 and A to F)
+
+2. float    : a number with a decimal point
+e.g.
+a = 5.22
+b = 5.22e10
+c = 5.22e-10
+
+3. complex  : a number with two parts. real and imaginary. NOTE: imaginary number should be followed by j
+e.g. 
+a = 3 + 4j
+
+4. bool     : boolean value. 
+e.g. a = True, b = False 
+
+5. NoneType : None value
+e.g. a = None 
+
+
+
+Iterables: 
+Objects that can hold multiple values. 
+1. list      : ordered collection of elements enclosed []. It is Mutable, allows different datatypes, allows duplicates
+Methods:
+Insert: append, insert, extend
+Delete: pop, remove, clear
+Read  : count, index
+Update: sort, reverse
+
+
+2. tuple     : ordered collection of elements enclosed in (), () is optional and , is mandatory if only single element. It is Immutable, allows different datatypes, allows duplicates
+Methods:
+Insert: None
+Delete: None
+Read  : count, index
+Update: None
+
+
+
+3. set        : Unordered collection of elements enclosed in {}. It is Mutable, Allows only immutable objects, does not allow duplicates
+Methods:
+Insert: add, update
+Delete: pop, remove, discard, clear
+Read  : None
+Update: None
+Set Theory Methods: union, intersection, difference, symmetric_difference
+
+4. frozenset  : Unordered collection of elements enclosed in frozenset({}). It is same like set, except it is immutable.
+Methods: only set theory methods
+
+5. dict       : Ordered collection of key : value pairs enclosed in {}. It is mutable, allows only immutable keys and any values, will not allow duplicate keys. 
+Methods:
+Insert: setdefault, update
+Delete: pop, popitem, clear
+Read  : get, keys, values, items
+Update: None
+
+6. range      : Ordered collection of integers. syntax: range(start:stop:step). step can be only non-zero integer. It is immutable.
+Methods:
+Read: count, index
+
+7. string     : Ordered collection of characters enclosed in single, double, triple quotes. single and double can be used interchangeably, triple quotes are used for multi line string. 
+Methods:
+Insert: None
+Delete: strip, lstrip, rstrip
+Read  : count, index, rindex, find, rfind, startswith, endswith
+Update: replace, case methods: upper, lower, swapcase, title, capitalize
+Others: isalpha, isdigit, isdecimal, isnumeric, isalnum, isspace, islower, isupper
+
+
+8. bytes       : Ordered collection of integer values(0-255) enclosed in b''. It is immutable, allows duplicates. 
+9. bytearray   : Ordered collection of integer values(0-255) enclosed in bytearray(b''). It is mutable, allows duplicates.
+10. memoryview : View of the existing byte object(bytes or bytearray)
+ 
+
+3. Iterators.
+Iterators has zero elements, will not store any element. generates each element on demand. 
+e.g. enumerate, zip, map, filter, reduce. 
+
+4. User Defined Objects.
+OOPS
+
+
+
+
+CONTROL FLOW STATEMENTS
+Controls the flow of execution of program.
+3 types:
+1. Conditional Statements
+2. Iterative Statements
+3. Jump Statements
+
+1. Conditional Statements
+2 types
+a. If Statement (if, if-else, if-elif-else, nested if)
+e.g. 
+task 1: if number greater than 0, print 'Hi'
+a = 32
+if a > 0:
+    print('Hi')
+task 2: if number greater than 18 print 'Major' else print 'Minor'
+age = 32
+if age > 18:
+    print('Major')
+else:
+    print('Minor')
+task 3: if number greater than 30 print 'Hello', if between 11 to 29 print 'Hi', if between 0 to 10 print 'Bye'
+num = 100
+if num > 30:
+    print('Hello')
+elif num > 20:
+    print('Hi')
+else:
+    print('Bye')
+task 4: print Hi in a 4*4 square matrix
+for i in range(4):
+    for j in range(4):
+        print('Hi')
+b. match case: matches a object with case values
+task : 
+take a variable in range 0-9, if 0 print 'zero', if 1 print 'one', if 2 print 'two', ... till 9
+var = 7
+match var:
+    case 0: print('Zero')
+    case 1: print('One')
+    case 2: print('Two')
+    case 3: print('Three')
+    case 4: print('Four')
+    ...
+
+2. Iterative Statements
+Iterative statements are used to repeat a set of statements multiple types. 
+2 types
+a. For loop  : iterate over a sequence. repeats statements for each element in the sequence
+for i in range(10):
+    print('hi')
+b While loop : iterate over a condition. repeats the statements until the condition is true.
+i = 1
+while i <100:
+   print('HI')
+   i += 1
+
+3. Jump Statements
+continue, break, pass, else, exit
+
+
+
+
+
+
+
+TIME AND SPACE COMPLEXITIES:e
+TIME COMPLEXITY: No. of operations compared to the size of input
+e.g. O(1), O(logN), O(N), O(NlogN), O(N^2), O(N^3) ....
+SPACE COMPLEXITY: Extra space compared to the size of input
+e.g. O(1), O(N), O(N^2)
