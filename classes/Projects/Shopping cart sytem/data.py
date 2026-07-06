@@ -14,6 +14,17 @@ Users = {
         'password':'1236'
     }
     }
+admin = {
+    'Raju' :{
+        'password' : 'Raju@9030'
+    },
+    'Abi' : {
+        'password' : 'Abi@1234'
+    },
+    'Srinu Babu' : {
+        'password' : 'srinubabu@1234'
+    }
+}
 
 products = {
     "Laptop": {
